@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  border: 10px solid black;
+  height: 90vh;
+  flex-flow: wrap-reverse;
+}
+
+
+.box{
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  line-height: 150px;
+}
+#box1{
+  background-color: red;
+}
+#box2{
+  background-color: blue;
+}
+#box3{
+  background-color: green;
+}
+#box4{
+  background-color: black;
+}
+
+@media screen and (max-width: 550px){
+  .container{
+    flex-wrap: wrap;
+  }
+}
