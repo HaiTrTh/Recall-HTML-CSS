@@ -6,7 +6,7 @@
   <title>HTML FORMS</title>
 </head>
 <body>
-  <form action="index.php" method="post">
+  <form action="index.php" method="post" enctype="multipart/form-data"> 
       <label for="username">Username</label>
       <input type="text" id="username" placeholder="tranthanhhai"  minlength="6" maxlength="15">
       <br>
@@ -21,6 +21,32 @@
 
       <label for="birthday">Birthday</label>
       <input type="date" id="birthday"><br>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+      <label for="title">Title</label>
+      <label for="Mr.">Mr.</label>
+      <input type="radio" id="Mr." value="Mr" name="title">
+      <label for="Ms.">Ms.</label>
+      <input type="radio" id="Ms." value="Ms" name="title">
+      <label for="Phd.">Phd.</label>
+      <input type="radio" id="phd." value="Phd" name="title"><br>
+
+      <label for="payment">payment</label>
+      <select id="payment">
+        <option value="visa" name="visa">visa</option>
+        <option value="debit" name="debit">debit</option>
+        <option value="credit" name="credit">credit</option>
+      </select><br>
+
+      <label for="subcribe">Subcribe</label>
+      <input id="subcribe" type="checkbox"><br> 
+      <label for="comment">Comment</label>
+      <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+      <label for="file">File</label>
+      <input type="file" id="file" accept="image/png, image/jpeg">
       <input type="reset"><br>
       <input type="submit">
   </form>
