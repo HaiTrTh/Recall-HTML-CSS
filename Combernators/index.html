@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Combinator</title>
+</head>
+<body>
+    <!-- selector < > selector
+    descendant 
+    child > 
+    general sibling ~
+    adjation sibling + -->
+    <style>
+      div ~ p{
+        background-color: red
+      }
+    </style>
+    <div>
+      <p>this is paragraph 1</p>
+      <p>this is paragraph 2</p>
+      <form>
+        <p>this is a paragraph 3</p>
+      </form>
+    </div>
+    <p>this is a paragraph 4</p>
+    <p>this is a paragraph 5</p>
+  </body>
+</html>
