@@ -1,0 +1,12 @@
+#category {
+  cursor: pointer;
+}
+#category p{
+  padding: 12px;
+  background-color: lightblue;
+  display: none;
+}
+
+#category:hover p{
+  display: block;
+}
