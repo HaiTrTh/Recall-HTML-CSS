@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    /* .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto auto ;
+      background-color:#2196F3;
+      text-align: center;
+      padding: 10px;
+      gap: 10px;
+    }
+    .grid-item{
+        padding:20px;
+        background-color:rgba(255,255,255,0.8);
+        font-size: 2rem;
+    } */
+     /* .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196f3;
+      padding:10px;
+      gap:10px;
+      grid-template-rows: 80px 200px;
+    }
+     .grid-item{
+      background-color: rgba(255,255,255,0.8);
+      padding:20px;
+      text-align: center;
+      font-size: 2rem;
+    } */
+
+    /* .grid-container{
+      display:grid;
+      grid-template-columns: 50px 50px 50px;
+      background-color: #2196f3;
+      gap: 10px;
+      padding: 10px;
+      justify-content: center;
+    }
+    .grid-item{
+      background-color: rgba(255,255,255,0.8);
+      text-align: center;
+      font-size: 2rem;
+    } */
+    /* .grid-container{
+      display: grid;
+      padding: 10px;
+      background-color:  #2196f3;
+      gap:10px;
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+    .grid-item{
+      background-color: rgba(255,255,255,0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .item1{
+      grid-row: 1/4;
+      background-color: rgba(255,255,255);
+    } */
+     .item1{
+      grid-area: myArea;
+     }
+     .grid-container{
+       display: grid;
+       grid-template-areas: 'myArea myArea myArea . . .' 'myArea myArea myArea. . .';
+       background-color: #2196f3;
+        gap: 10px;
+        padding: 10px;
+    }
+    .grid-container > div{
+      background-color: rgba(255,255,255,0.8);
+      padding: 20px;
+
+    }
+  </style>
+<body>
+    <!-- <h1>Display: Grid</h1>
+    <p>Use diplay: grid; to make a block-level grid container </p>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div> -->
+
+    <!-- <h1>Grid lines</h1>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      <div class="grid-item">10</div>
+    </div> -->
+
+    <!-- <h1>The grid-template-rows property</h1>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div> -->
+    <!-- <h1>The justify-content Property</h1>
+    <p>Use the justify-content property to align the grid inside the container.</p>
+    <p>The value "space-evenly" will give the columns equal amount of space between, and around them:</p>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div> -->
+
+    <h1>The align-content Property</h1>
+    <p>The align-content property is used to vertically align the whole grid inside the container</p>
+    <div class="grid-container">
+          <div class="item1">1</div>
+          <div class="item2">2</div>
+          <div class="item3">3</div>
+          <div class="item4">4</div>
+          <div class="item5">5</div>
+          <div class="item6">6</div>
+          <div class="item7">7</div>
+    </div>
+</body>
+</html>
