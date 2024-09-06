@@ -6,11 +6,61 @@
   <title>Document</title>
 </head>
 <body>
+  <style>
+    *{
+      margin: 0px;
+      padding:0px;
+      box-sizing: border-box;
+    }
+    header{
+      background-color: lightgrey;
+      padding: 40px;
+    }
+    header h2{
+      text-align: center;
+    }
+    nav{
+      background-color: black;
+      height: 40px;
+    }
+    nav h2{
+      color :white;
+      text-align: center;
+    }
+    aside{
+      width: 20%;
+      padding: 20px;
+      float: left;
+    }
+    section{
+      width: 40%;
+      padding: 20px;
+      float: left;
+    }
+    article{
+      width: 40%;
+      float: left;
+      padding: 20px;
+    }
+    footer{
+      clear: both;
+      padding: 40px;
+      background-color:lightblue;
+    }
+    footer h2{
+      text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+        aside, section, article{
+          width: 100%;
+        }
+    }
+  </style>
   <!--  Sementic HTML -->
     <!-- 1. Good SEO
     2. Good for research enginer
     3. Easy scan to HTML many traffic--> 
-    <header> 
+    <!-- <header> 
         <div>icon</div>
         <nav>navigations</nav>
         <h4>list course</h4>
@@ -42,6 +92,34 @@
         <li>three</li>
         <li>four</li>
       </ul>
+    </footer> -->
+    <header>
+        <h2>Logo</h2>
+    </header>
+    <nav class="navigaion">
+        <h2>This is the navigation of the content</h2>
+    </nav>
+    <main>
+      <aside>
+        <h2>This is the aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam beatae tenetur placeat quia quas eveniet quidem quis magni voluptates praesentium.</p>
+      </aside>
+      <section>
+        <h2>
+        This is the section body (This is dependence content)
+      </h2>
+      <p>Lorem ipsum dolor sit Lorem ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nostrum voluptatibus doloremque officiis, debitis minima incidunt rerum dolore est odit iusto! Aut recusandae sint aperiam. Voluptatem amet molestiae praesentium dolorum.
+         dolor sit amet consectetur adipisicing elit. Provident blanditiis iste obcaecati rerum est cum voluptatem eaque fugit rem recusandae, dignissimos quidem voluptatibus maxime hic quam delectus minus excepturi. Consequatur reiciendis illum repellat odio exercitationem excepturi praesentium harum? Molestiae, eius. amet consectetur, adipisicing elit. Quisquam beatae tenetur placeat quia quas eveniet quidem quis magni voluptates praesentium.</p>
+      </section>
+      <article>
+        <h2>
+        This is the article content:  (this is independence content)
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid incidunt unde possimus autem? Optio eaque doloribus cupiditate sit nostrum. Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis iste obcaecati rerum est cum voluptatem eaque fugit rem recusandae, dignissimos quidem voluptatibus maxime hic quam delectus minus excepturi. Consequatur reiciendis illum repellat odio exercitationem excepturi praesentium harum? Molestiae, eius. amet consectetur, adipisicing elit. Quisquam beatae tenetur placeat quia quas eveniet quidem quis magni voluptates praesentium.</p>
+    </article>      
+    </main>
+    <footer>
+      <h2>This is the footer content</h2>
     </footer>
 </body>
 </html>
