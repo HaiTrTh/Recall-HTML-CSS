@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .tooltip{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tooltipHover{
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 100px;
+    }
+    .tooltipHover:hover .tooltipRight{
+      display: block;
+    }
+    .tooltipHover .tooltipRight{
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      display: none; 
+      position: absolute;
+      transition: all 0.5s linear;
+      width: 170px;
+      z-index: 1;
+      left: 120%;
+      bottom: -5%;
+    }
+    .tooltipRight::before{
+      content: "";
+      border-top: 10px solid transparent; 
+      border-bottom: 10px solid  transparent;
+      border-right: 20px solid   black;
+      position: absolute;
+      left: -20px;
+    }
+
+  </style>
+<body>
+  <div class="tooltip">
+    <h1>Basic Tooltip</h1>
+    <p>Move the mouse over the text below:</p>
+    <div class="tooltipHover">
+      <p>Hover over me</p>
+      <div class="tooltipRight" >when hover me</div>
+    </div>
+    <div class="tooltipHover2">
+      <p>Hover over me</p>
+      <div class="tooltipTop"></div>
+    </div>
+  </div>
+</body>
+</html>

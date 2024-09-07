@@ -46,7 +46,14 @@
       height:100px;
       background-color: red;
       position: relative;
-      animation: changeColorV3 4s;
+      /* animation-name: changeColorV3;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-fill-mode: backwards;
+      animation-iteration-count: 2; */
+      /* animation: changeColorV3 4s linear 2s 4 alternate */
     }
     @keyframes changeColorV3{
       0%{
@@ -75,6 +82,105 @@
         left: 0px;
       }
     }
+    .animationDivs4{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position:relative;
+      /* animation-name: changeColorV4; */
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-delay: 2s;
+    }
+    @keyframes changeColorV4{
+      0%{
+        background-color: red;
+        top: 0;
+        left: 0;
+      }
+      25%{
+        background-color: yellow;
+        left: 200px;
+        top:0px;
+      }
+      50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+      75%{
+        background-color: green;
+        left: 0px;
+        top:200px;
+      }
+      100%{
+        background-color: red;
+        left:0px;
+        top:0px;
+      }
+    }
+    .slideIn{
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      animation: slide 2s ease ;
+      margin-bottom: 100px
+    }
+    @keyframes slide{
+      from{
+        transform: translateX(100%);
+      }
+    }
+    .slideOut{
+      background-color:red;
+      width: 100px;
+      height: 100px;
+      text-align:center;
+      line-height:100px;
+      animation: slideRight 2s forwards;
+      margin-bottom: 100px;
+    }
+  
+    @keyframes slideRight{
+     
+      to{
+        transform: translate(100%);
+      }
+    }
+    .slideDown,.slideUp,.rotate{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 150px;
+    }
+    .slideDown{
+      animation: slideDown 2s ;
+    }
+    @keyframes slideDown{
+      from{
+        transform: translateY(100%);
+      }
+    }
+    .slideUp{
+      animation: slideUp 2s forwards;
+    }
+    @keyframes slideUp{
+      to{
+        transform: translateY(100%);
+      }
+    }
+    .rotate{
+      animation: rotate 2s;
+    }
+    @keyframes rotate{
+      25%{
+        transform: rotate(360deg)
+      }
+     
+    }
+    
   </style>
 <body>
   <h1>CSS Animation</h1>
@@ -86,5 +192,16 @@
   <h1>CSS animation V3</h1>
   <div class="animationDiv3"></div>
   <p>Note: When an animation is finished, it goes back to its original style.</p>
+  <h1>CSS animation V4 iter</h1>
+  <p>Note: When an animation is finished, it goes back to its original style.</p>
+  <div class="animationDiv4"></div>
+  <h1>CSS animation V5</h1>
+  <p>Slide in</p>
+  <div class="slideIn">SlideIn</div>
+  <div class="slideOut">SlideOut</div>
+  <div class="slideDown">SlideDown</div>
+  <div class="slideUp">SlideUp</div>
+  <div class="rotate">Rotate</div>
+  
 </body>
 </html>
