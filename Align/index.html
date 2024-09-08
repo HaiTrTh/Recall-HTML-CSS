@@ -48,6 +48,18 @@
       align-items: center;
       justify-content: center;
     }
+    .center{
+      width: 800px;
+      height: 400px;
+      border: 1px solid black;
+      position: relative;
+    }
+    .center div{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   </style>
 <body>
       <h1>Center Align Elements</h1>
@@ -70,5 +82,10 @@
       <div class="horizontalAndVertical3">
         I'm vertically and horizontally with Flex-box
       </div>
+
+      <div class="center">
+        <div>I am vertically and horizontally centered.</div>
+      </div>
+      
 </body>
 </html>
